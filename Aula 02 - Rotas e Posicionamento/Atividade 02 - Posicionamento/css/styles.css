@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #bcf2ff;
+}
+
+
+div.menu {
+  
+  background-color: #ef4c27;
+  text-align: left;
+  margin: 30px;
+  width: 960px;
+  height: 53px;
+  margin-bottom: 50px;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  /* height: 53px; */
+}
+
+div.menu a strong {
+  vertical-align: super;  
+}
+
+div.menu a:hover {
+  background-color: #f57f17;
+}
+
+.produtos {
+  width: 960px;  
+  background-color: white;
+  margin: 30px;
+}
+.produto-linha {
+  width: 960px;
+  height: 320px;
+  margin: 30px;
+  /* background-color: violet; */
+}
+
+.produto {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  color: #FFF;
+  
+  
+  position: absolute;
+  background-size: contain;
+
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+.produto1 {  
+  
+}
+
+.produto2 {
+  left: 355px;
+}
+
+.produto3 {
+  
+  left: 675px;
+}
+
+.ver-mais{
+  height: 45px;
+  width: 170px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fb1f1f;
+  cursor: pointer;
+  border-radius: 1.75mm;
+  border-color: #f84914;
+  position: absolute;
+  bottom: 15px; 
+  left: 65px;
+
+}
+
+.ver-mais:hover{
+  color: white;
+  background-color: #a82f0a;
+  text-decoration: underline;
+}
+
+.produto-descricao {
+  position: absolute;
+  width: 280px;
+  top: 105px; 
+  height: 35px;
+  font-size: 27px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.produto-descricao:hover {
+  background-color: rgba(248, 73, 20, 1.5)
+}
+
+
+#img-menu {
+  position: absolute;
+  top: 0px;
+  height: 112px
+}
+
+.selo {
+  position: absolute;
+  right: 30px;
+  height: 60px;
+}
+

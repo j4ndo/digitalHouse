@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  /* color: #7159c1;   */
+  color: #673ab7;  
+}
+
+h2, h3 {
+  color: #673ab7;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+:root {
+  --tamanhoFonteTexto: 14px; 
+}
+
+p {
+  text-align: justify;
+  font-size: var( --tamanhoFonteTexto );
+  line-height: calc( var( --tamanhoFonteTexto ) + 9px );
+}
+
+
+
+div.menu {
+  background-color: #673ab7;
+  text-align: center;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: #9575cd;
+}
+
+h2 i {
+    text-decoration: underline;
+}

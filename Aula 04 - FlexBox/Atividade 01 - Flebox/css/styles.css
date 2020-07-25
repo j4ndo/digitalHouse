@@ -1,0 +1,27 @@
+.flex {
+  /* height: 300px; */
+  width: 960px;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  align-items: flex-start;
+  /* align-content: center; */
+  background-color: beige;
+}
+
+.filha {
+  height: 250px;
+  width: 300px;
+  margin: 10px;
+  align-self: center
+}
+
+#div1  {
+  background-color: chocolate;
+}
+#div2  {
+  background-color: aqua;
+}
+#div3  {
+  background-color: darkorange;
+}

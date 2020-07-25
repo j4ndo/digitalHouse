@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="css/estilos.css" rel="stylesheet" />
+  <title>Contato</title>
+</head>
+
+<body>
+  <h1>Formulário de Contato</h1>
+  <div class="form">
+    <form action="#" method="POST">
+      <label for="nome">Nome e Sobrenome</label>
+      <input class="campoFormulario" type="text" name="nome" placeholder="Informe seu Nome e Sobrenome" required />
+      <br />
+      <label for="email">E-mail</label>
+      <input class="campoFormulario" type="text" name="email" placeholder="user@email.com" required />
+      <br />
+      <label for="assunto">Assunto</label>
+      <select class="campoFormulario" name="assunto">
+        <optgroup label="Contato Profissional">
+          <option value="01">Entrevista de Emprego</option>
+          <option value="02">Feedback Processo Seletivo</option>
+          <option value="03">Meeting</option>
+        </optgroup>
+        <optgroup label="Contato Pessoal">
+          <option value="04">Tomar um Shopp</option>
+          <option value="05">Jogar Futebol</option>
+          <option value="06">Sair com os parças</option>
+        </optgroup>
+      </select>
+      <br />
+
+      <label for="genero">Gênero</label>
+      <input type="radio" name="genero" value="Masculino">Masculino
+      <input type="radio" name="genero" value="Feminino">Feminino
+      <input type="radio" name="genero" value="Prefiro não responder">Prefiro não responder
+      <br />
+      <label for="passatempos">Passatempos</label>
+      <input type="checkbox" name="passatempos" value="Cantar">Cantar
+      <input type="checkbox" name="passatempos" value="Tocar">Tocar
+      <input type="checkbox" name="passatempos" value="Dançar">Dançar
+      <input type="checkbox" name="passatempos" value="Jogar Futebol">Jogar Futebol
+      <input type="checkbox" name="passatempos" value="Acadêmia">Academia
+      <br />
+
+      <label for="comentarios">Comentários</label>
+      <textarea class="campoFormulario" name="comentarios" rows="4" cols="50" style="resize: vertical" required>
+      </textarea>
+      <br />
+      <button class="enviar" type="submit">Enviar</button>
+      <button class="excluir" type="reset">Excluir</button>
+    </form>
+  </div>
+</body>
+
+</html>

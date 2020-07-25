@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('../images/background.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  background-size: 100% 100%;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  /* color: #7159c1;   */
+  color: rgba(255, 255, 255, 1)
+}
+
+h2, h3 {
+  color: #f57f17
+;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+:root {
+  --tamanhoFonteTexto: 14px; 
+}
+
+p {
+  text-align: justify;
+  font-size: var( --tamanhoFonteTexto );
+  line-height: calc( var( --tamanhoFonteTexto ) + 9px );
+}
+
+a{
+  color: #f57f17;
+}
+
+
+div.menu {
+  background-color: #e63a06;
+  text-align: center;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: #f57f17
+  ;
+}
+
+h2 i {
+    text-decoration: underline;
+}
+
+strong:hover {
+  color: #e63a06
+}
+
+mark{
+  background-color: #ecaa71;
+  color: black;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+}
+
+.destaque {
+  font-size: 22px;
+  color: #f57f17;
+  background-color: rgba(0, 0, 0, 0.1);
+} 
+
+.material-icons {
+  font-size: 22px; 
+}
+
+
+.campoFormulario {
+  font-size:14px;
+  color: white;
+}
+
+.campoFormulario:focus {
+  background-color: #e63a06;
+  border-color: #e63a06;
+  outline: none !important;
+  border:1px solid red;
+  box-shadow: 0 0 10px rgb(255, 155, 116);
+  color: white;
+}
+
+.campoFormulario:focus::-webkit-input-placeholder {
+  color: white;
+}
+/* 
+.img-passatempo:hover {
+  border-radius: 10px;
+  opacity: 0.5;
+} */
+
+/* .passatempos {
+  text-align: center;
+}
+
+.passatempo1 {
+  position: absolute;
+  left: 90px;
+}
+
+.passatempo2 {
+  position: absolute;
+  
+  right: 100px;
+}  */
+
+/* .midias-video {
+  position: absolute;
+  left: 90px;
+  top: 550px;
+}
+
+.midias-audio {
+  position: absolute;
+  top: 550px;
+  right: 100px;
+} */
+
+.enviar{
+  height: 30px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fb1f1f;
+  cursor: pointer;
+  border-radius: 1.75mm;
+  border-color: #f84914;  
+
+}
+
+.enviar:hover{
+  color: white;
+  background-color: #f57f17;
+  text-decoration: underline;
+}
+
+.excluir{
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #ebe5e3;
+  cursor: pointer;
+  border-radius: 1.75mm;
+  border-color: #b1abaa;  
+
+}
+
+.excluir:hover{
+  color: white;
+  background-color: #312f2f;
+  text-decoration: underline;
+}
+
+.form {
+  text-align: center;
+}
+
+section {
+  width: 960px;
+  padding: 30px;
+  border: 5px dotted white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;  
+}
+
+.caixa {
+  display: flex;
+  flex-wrap: wrap;  
+  width: 900px;
+  background-color: white;
+  height: 900px;
+}
+.containerA {
+  background-color: yellow;
+  width: 100%;
+  
+}
+.containerCentro {
+  flex-direction: column;
+  background-color: #f57f17;
+  flex-wrap: wrap;
+
+}
+
+.containerB {
+  background-color: #312f2f;
+}
+
+.containerC {
+  background-color: yellow;
+}
+
+.containerD {
+  background-color: yellow;
+}

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('../images/background.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  background-size: 100% 100%;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  /* color: #7159c1;   */
+  color: rgba(255, 255, 255, 1)
+}
+
+h2, h3 {
+  color: #f57f17
+;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+:root {
+  --tamanhoFonteTexto: 14px; 
+}
+
+p {
+  text-align: justify;
+  font-size: var( --tamanhoFonteTexto );
+  line-height: calc( var( --tamanhoFonteTexto ) + 9px );
+}
+
+a{
+  color: #f57f17;
+}
+
+
+div.menu {
+  background-color: #e63a06;
+  text-align: center;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: #f57f17
+  ;
+}
+
+h2 i {
+    text-decoration: underline;
+}
+
+strong:hover {
+  color: #e63a06
+}
+
+mark{
+  background-color: #e63a06;
+  color: #e63a06;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+label {
+  font-size: 20px;
+}
+
+.destaque {
+  font-size: 22px;
+  color: #f57f17;
+  background-color: rgba(0, 0, 0, 0.1);
+} 
+
+.material-icons {
+  font-size: 22px; 
+}

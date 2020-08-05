@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<script>
+  function getFormvalue() {
+    
+    var id = document.getElementById('id').value;
+    var name = document.getElementById('name').value;
+    var location = document.getElementById('location').value;
+    var password = document.getElementById('password').value;
+    var repeatPassword = document.getElementById('repeatPassword').value;
+
+    console.log(id, name, location, password, repeatPassword);
+
+    if (!id){
+      event.preventDefault();
+      alert("Field ID is required!");
+      return;
+    } else if (!name){
+      event.preventDefault();
+      alert("Field Name is required!");
+      return;
+    } else if (!location){
+      event.preventDefault();
+      alert("Field Location is required!");
+      return;
+    } else if (!password){
+      event.preventDefault();
+      alert("Field Password is required!");
+      return;
+    } else if (!repeatPassword){
+      event.preventDefault();
+      alert("Please Repeat your Password!");
+      return;
+    } else if (password != repeatPassword){
+      event.preventDefault();
+      alert("Passwords must be the same!");
+      return;
+    }
+  }
+</script>
+
+<body>
+  <div class="container">
+    <h1>Register Form</h1>
+    <form action="#" onsubmit="getFormvalue()">
+      <div class="form-group">
+        <label for="id">Id</label>
+        <input class="form-control" type="text" name="id" id="id">
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" id="name">
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input class="form-control" type="text" name="location" id="location">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password">
+      </div>
+      <div class="form-group">
+        <label for="password">Repeat Password</label>
+        <input class="form-control" type="password" name="repeatPassword" id="repeatPassword">
+      </div>
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

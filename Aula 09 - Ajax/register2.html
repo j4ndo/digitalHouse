@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<script>
+  function getFormvalue() {
+    event.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var surname = document.getElementById('surname').value;
+    var password = document.getElementById('password').value;
+    var repeatPassword = document.getElementById('repeatPassword').value;
+
+    console.log(name, surname, location, password, repeatPassword);
+
+    if (!name){
+      event.preventDefault();
+      alert("Field Name is required!");
+      return;
+    } else if (!password){
+      event.preventDefault();
+      alert("Field Password is required!");
+      return;
+    } else if (!repeatPassword){
+      event.preventDefault();
+      alert("Please Repeat your Password!");
+      return;
+    } else if (password != repeatPassword){
+      event.preventDefault();
+      alert("Passwords must be the same!");
+      return;
+    }
+  }
+  function hideForm(){
+    $('#showName').html('First Name: ' + $('#name').val());
+    $('#showLastname').html('Lastname: ' + $('#lastname').val());
+    $('#showPassword').html('Password: ' + $('#password').val());
+    $('#showRepeatPassword').html('Password Repeated: ' +$('#repeatPassword').val());
+    $('#showSubscribe').html('Subscribed: ' + $('#subscribe').is(":checked"));
+    var gender = $('#gender').val();
+    $('#showGender').html('Gender: ' + gender);    
+    if (gender == 'Male') {
+      $('body').css({ 'background-color': 'blue' });
+    } else if (gender == 'Female') {
+      $('body').css({ 'background-color': 'red' });
+    } else {
+      $('body').css({ 'background-color': 'gray' });
+    }
+
+    
+    $('#formGetNameSurname').css({ display: "none" });
+    $('#formShowNameSurname').css({ display: "block" });
+  }
+  function showForm(){
+    $('#formGetNameSurname').css({ display: "block" });
+    $('#formShowNameSurname').css({ display: "none" });
+  }
+</script>
+
+<body>
+  <div class="container">
+    <h1>Get name and surname from Form</h1>
+    <form id="formGetNameSurname" action="#" onsubmit="getFormvalue()">      
+      <div class="form-group col-md-6">
+        <label for="name">First Name</label>
+        <input class="form-control" type="text" name="name" id="name">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lastname">Lastname</label>
+        <input class="form-control" type="text" name="lastname" id="lastname">
+      </div>       
+      <div class="form-group col-md-4">
+        <label for="exampleFormControlSelect1">Gender</label>
+        <select class="form-control" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="password">Repeat Password</label>
+        <input class="form-control" type="password" name="repeatPassword" id="repeatPassword">
+      </div>
+      <div class="form-check col-md-12">
+        <input type="checkbox" class="form-check-input" id="subscribe">
+        <label class="form-check-label" for="subscribe">Subscribe</label>
+      </div>
+     
+      <button class="btn btn-primary" type="submit">Send</button>
+      <button class="btn btn-danger" type="reset">Reset</button>
+      <button class="btn btn-default" type="button" onclick=hideForm()>Hide Form</button>
+    </form>
+    <form id="formShowNameSurname" style="display: none" action="#">  
+      <ul>
+        <li id="showName"></li>
+        <li id="showLastname"></li>
+        <li id="showPassword"></li>
+        <li id="showRepeatPassword"></li>
+        <li id="showSubscribe"></li>
+        <li id="showGender"></li>
+      </ul>     
+      <button class="btn btn-primary" type="button" onclick=showForm()>Show Form</button>
+    </form>
+
+  </div>
+
+</body>
+
+</html>
